@@ -11,19 +11,19 @@ import java.util.Scanner;
 public class GreatCircleDistance {
     public static void main(String[] args) {
         //calculation test
-        double x1 = Math.toRadians(80.0);
-        double y1 = Math.toRadians(25.0);
-        double x2 = Math.toRadians(155.0);
-        double y2 = Math.toRadians(102.5);
+//        double x1 = Math.toRadians(80.0);
+//        double y1 = Math.toRadians(25.0);
+//        double x2 = Math.toRadians(155.0);
+//        double y2 = Math.toRadians(102.5);
 
         Scanner kb = new Scanner(System.in);
 
         //declare and initiate variables.
         double r = 6371.0;
-//        double x1 = Math.toRadians(kb.nextDouble());
-//        double y1 = Math.toRadians(kb.nextDouble());
-//        double x2 = Math.toRadians(kb.nextDouble());
-//        double y2 = Math.toRadians(kb.nextDouble());
+        double x1 = Math.toRadians(kb.nextDouble());
+        double y1 = Math.toRadians(kb.nextDouble());
+        double x2 = Math.toRadians(kb.nextDouble());
+        double y2 = Math.toRadians(kb.nextDouble());
 
 
 
