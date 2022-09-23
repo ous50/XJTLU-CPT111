@@ -18,17 +18,28 @@ public class GreatCircleDistance {
 
         Scanner kb = new Scanner(System.in);
 
+        final double r = 6371.0;// make radius a constant(will not change later ).
+
         //declare and initiate variables.
-        double r = 6371.0;
         double x1 = Math.toRadians(kb.nextDouble());
         double y1 = Math.toRadians(kb.nextDouble());
         double x2 = Math.toRadians(kb.nextDouble());
         double y2 = Math.toRadians(kb.nextDouble());
 
-
-
         //the calculation
-        double dist = 2 * r * Math.asin(Math.sqrt(Math.sin((x2-x1)/2)*Math.sin((x2-x1)/2) + Math.cos(x1)*Math.cos(x2)*Math.sin((y2-y1)/2)*Math.sin((y2-y1)/2)));
+//        double dist = 2 * r * Math.asin(Math.sqrt(Math.sin((x2-x1)/2)*Math.sin((x2-x1)/2) + Math.cos(x1)*Math.cos(x2)*Math.sin((y2-y1)/2)*Math.sin((y2-y1)/2))); //too hard to debug
+        double sin_xbar = Math.sin((x2-x1)/2);
+        double sin2_xbar = sin_xbar * sin_xbar;
+        double cos_xbar = Math.cos(x1)*Math.cos(x2);
+        double sin_ybar  = Math.sin((y2-y1)/2);
+        double sin2_ybar = sin_ybar * sin_ybar;
+
+        double dist = 2 * r * Math.asin(
+                Math.sqrt(
+                        sin2_xbar + cos_xbar * sin2_ybar
+                )
+        );
+
 
         //output
         System.out.println(dist + " kilometres");
