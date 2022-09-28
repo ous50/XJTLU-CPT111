@@ -1,6 +1,6 @@
 package com.ous50.cpt111.week4.homoworks;
 
-import java.util.Scanner;
+import com.ous50.cpt111.lib;
 
 /**
  * <p>Exercise #4.1 Black Jack</p>
@@ -41,11 +41,38 @@ import java.util.Scanner;
 
 public class BlackJack {
     public static void main(String[] args) {
-        //new scanner
-        Scanner cin = new Scanner(System.in);
 
 
+        //variables
+        int firstNumber = lib.readInt();
+        int secondNumber = lib.readInt();
 
+
+        //if statement
+        if (firstNumber > 21){
+            // to recognize if b is burst or not
+            if (secondNumber <= 21) {
+                System.out.println(secondNumber);
+            } else {
+                lib.println("-1");
+            }
+
+        } else if (secondNumber > 21) {
+            // to recognize if a is burst or not
+            if (firstNumber <= 21) {
+                lib.println(firstNumber);
+            } else {
+                lib.println("-1");
+            }
+
+        } else {
+            //no burst situations
+            if (firstNumber < secondNumber ) {
+                lib.println(secondNumber);
+            } else  {
+                lib.println(firstNumber);// when a = b, choosing both of them to print out is acceptable.
+            }
+        }
 
     }
 }

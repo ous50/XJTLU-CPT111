@@ -52,7 +52,7 @@ public class SimpleMath {
 
 ## CW1 #2.2 ASCII Art
 
-Write a Java program that prints characters depicting a Christmas tree as in the test case below.
+Write a Java program thaMaket prints characters depicting a Christmas tree as in the test case below.
 Note that you will need to use **escape characters**.
 
 <img src="./homework.assets/xmastree.png" alt="" style="float: left" height=100 />
@@ -253,13 +253,13 @@ Output:
 
 Write a Java program *PandemicSpread* to simulate how *fast* a pandemic spread with the following input:
 
-- init : the initial number of infected persons on day 1
-- numInfect : the average number of healthy people that one infected person newly infects per day
-- population : the total number of people in the area
+- init : the initial number of infected persons on **day 1**
+- numInfect : the average number of healthy people that one infected person **newly infects** per day
+- population : the **total number** of people in the area
 
 
 
-Return the day on which the *entire* population will be infected.
+Return **the day on which the *entire* population** will be infected.
 
 <img src="./homework.assets/pandemicspread.png" alt="" style="float: left" height=100 />
 
@@ -292,7 +292,7 @@ Write a Java program *RightTriangle* that takes three integer input numbers and 
 
 Your program must print output true if and only if the following two conditions are true :
 
-1) All three integers are positive (greater than zero).
+1) **All three integers** are **positive** (greater than zero).
 2) You can find two integers where the sum of the squares of those two integers is equal to the square of the third integer.
 
 
@@ -345,7 +345,7 @@ and for n = 12, the sequence is 12, 6, 3, 10, 5, 16, 8, 4, 2, 1
 
 
 
-Write a Java program *HailStone* that on input a positive integer n, prints the *length* of the Hailstone sequence starting at n.
+Write a Java program *HailStone* that on input a **positive integer** n, prints the *length* of the Hailstone sequence starting at n.
 
 
 
