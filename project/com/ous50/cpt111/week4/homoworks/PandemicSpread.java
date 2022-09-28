@@ -1,5 +1,6 @@
 package com.ous50.cpt111.week4.homoworks;
 
+import com.ous50.cpt111.lib;
 import java.util.Scanner;
 
 /**
@@ -44,14 +45,14 @@ public class PandemicSpread {
         return cin.nextInt();
     }
 
-    private static int spreadSimulationWhileLoop(int initInfectedNumber,int numInfectDaily,int population) {
+    private static int spreadSimulationWhileLoop(int init,int numInfect,int population) {
         int dayEntirePopulationInfected = 1;
-        int infectedNumber = initInfectedNumber;
-        int dailyInfected  = infectedNumber * numInfectDaily;
+        int infectedNumber = init;
+        int dailyInfected  = infectedNumber * numInfect;
 
             while (infectedNumber < population){
                 infectedNumber = infectedNumber + dailyInfected;
-                dailyInfected  = infectedNumber * numInfectDaily;
+                dailyInfected  = infectedNumber * numInfect;
                 dayEntirePopulationInfected++;
         }
 
@@ -61,11 +62,10 @@ public class PandemicSpread {
     public static int spreadSimulationForLoop(int init,int numInfect,int population) {
         int dayEntirePopulationInfected;
         int infectedNumber = init;
-        int dailyInfected  = infectedNumber * numInfect;
 
         for (dayEntirePopulationInfected = 1 ;infectedNumber < population; dayEntirePopulationInfected++ ){
-            infectedNumber += infectedNumber * numInfect;
-//            infectedNumber *= (1 + numInfect);
+//            infectedNumber += infectedNumber * numInfect;
+            infectedNumber *= (1 + numInfect);
             // a += b === a = a + b
             // a *= b === a = a * b
 //            infectedNumber =  infectedNumber *(1+ dailyInfected);
@@ -76,9 +76,9 @@ public class PandemicSpread {
 
     public static void main(String[] args) {
 
-        int init = readInt();
-        int numInfect = readInt();
-        int population = readInt();
+        int init       = lib.readInt();
+        int numInfect  = lib.readInt();
+        int population = lib.readInt();
 
 //        int dayEntirePopulationInfected = spreadSimulationWhileLoop(init, numInfect, population);
 
