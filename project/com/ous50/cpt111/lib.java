@@ -1,6 +1,7 @@
 package com.ous50.cpt111;
 
 import java.io.PrintStream;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class lib {
@@ -24,5 +25,10 @@ public class lib {
         System.out.printf(format, args);
     }
 
+    public static void print(Object obj) {System.out.print(obj);}
+
+    public static void printArray(Object[] array) {System.out.println(Arrays.toString(array));}
+
+    public static void printArray(int[] array) {System.out.println(Arrays.toString(array));}
 
 }

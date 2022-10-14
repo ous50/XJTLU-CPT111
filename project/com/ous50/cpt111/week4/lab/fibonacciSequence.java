@@ -39,13 +39,13 @@ public class fibonacciSequence {
 
         //calculate the number before stopping at maximum limit
 
-
-        resultArray = new int[];
-
-        if (limit > 1){
-            for (counter = 1,num < limit && num > 1, counter++){
-                num = ;
-        }
+//
+//        resultArray = new int[];
+//
+//        if (limit > 1){
+//            for (counter = 1,num < limit && num > 1, counter++){
+//                num = ;
+//        }
 
 
 
