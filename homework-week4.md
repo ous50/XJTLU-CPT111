@@ -4,7 +4,7 @@ In Black Jack card game, we call a value *busts* if it exceeds a sum of 21.
 
 Write a Java program *BlackJack* that on input 2 integer values greater than 0, prints a single integer of whichever value is nearest to 21 without going bust. Print -1 if both values bust.
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/Blackjack-Cards-Image.png" alt="" style="float: left" height=300 />
+<img src="./homework.assets/Blackjack-Cards-Image.png" alt="" style="float: left" height=300 />
 
 Test case 1:
 Input:
@@ -40,7 +40,7 @@ Write a Java program *PandemicSpread* to simulate how *fast* a pandemic spread w
 
 Return **the day on which the *entire* population** will be infected.
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/pandemicspread.png" alt="" style="float: left" height=100 />
+<img src="./homework.assets/pandemicspread.png" alt="" style="float: left" height=100 />
 
 
 
@@ -67,7 +67,7 @@ Output:
 
 Write a Java program *RightTriangle* that takes three integer input numbers and determines whether they make up the side lengths of a right triangle .
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/right-triangle1.png" alt="" style="float: left" height=300 />
+<img src="./homework.assets/right-triangle1.png" alt="" style="float: left" height=300 />
 
 Your program must print output true if and only if the following two conditions are true :
 
@@ -120,7 +120,7 @@ and for n = 12, the sequence is 12, 6, 3, 10, 5, 16, 8, 4, 2, 1
 
 
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/Hailstone.png" alt="" style="float: left" height=300 />
+<img src="./homework.assets/Hailstone.png" alt="" style="float: left" height=300 />
 
 
 

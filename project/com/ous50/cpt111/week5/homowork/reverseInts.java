@@ -9,7 +9,7 @@ import com.ous50.cpt111.lib;
 public class reverseInts {
 
     static void reverseInts(int[] nums){
-        for (int i = 0; i < nums.length / 2; i++ ) {
+        for (int i = 0; i < nums.length>>1; i++ ) {
             //store the original value
             int tmp = nums[i];
             //valuate from the subject

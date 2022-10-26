@@ -5,9 +5,9 @@ import com.ous50.cpt111.lib;
 public class evenOddSwap {
 
     public static int[] evenOddSwap(int[] nums) {
-        //declare variables
+        //declare the output array and clone from the input array.
         int[] outputArray = nums.clone();
-        //in case of nums[] has no entry
+        //in case of nums[] has no entry == lib.printArray(nums[]) = []
         if (nums.length == 0) return outputArray;
         boolean[] visitedArray = new boolean[nums.length];
 
@@ -29,7 +29,7 @@ public class evenOddSwap {
     }
 
     public static void main(String[] args) {
-        int[] nums = {};
+        int[] nums = {};//nums[] has no entry
         lib.printArray(evenOddSwap(nums));
     }
 }

@@ -10,7 +10,7 @@ For output print 0 for Sunday, 1 for Monday, 2 for Tuesday, and so on.
 
 Use the following formulas:
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/whatdayisit.png" alt="What day is it" style="float: " height=200 />
+<img src="./homework.assets/whatdayisit.png" alt="What day is it" style="float: " height=200 />
 $$
 \begin{align}
 a &= y - ( 14-m ) / 12 
@@ -42,7 +42,7 @@ public class DateToDay {
 Write a Java program that converts Cartesian coordinates to Polar coordinates.
 Your program should take two real input numbers x and y, and print the Polar coordinates r and θ according to the formulas below.
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/polarcoord.png" alt="" style="float: " height=150 />
+<img src="./homework.assets/polarcoord.png" alt="" style="float: " height=150 />
 $$
 r = \sqrt{x^2+y^2}
 \\ \theta = arctan\left( \frac{y}{x} \right)
@@ -80,7 +80,7 @@ There is another format called the *CMYK format* that specifies the level of cya
 
 
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/cmyk-vs-rgb-diagram.png" alt="" style="float: left" height=150 />
+<img src="./homework.assets/cmyk-vs-rgb-diagram.png" alt="" style="float: left" height=150 />
 
 Write a Java program that converts from CMYK format to RGB format using the following formulas:
 
@@ -116,7 +116,7 @@ The *great-circle distance* is the length of the shortest path between two point
 
 The formula is given below.
 
-<img src="/home/ous50/Nextcloud/XJTLU/XJTLU-CPT111/homework.assets/greatcircledist.png" alt="" style="float: left" height=300 />
+<img src="./homework.assets/greatcircledist.png" alt="" style="float: left" height=300 />
 
 Write a Java program that takes four `double` input numbers x1, y1, x2, y2, which are the latitude and longitude in degrees of two points on the surface of the Earth;
 uses the mean radius of the Earth *r = 6,371.0* kilometres;
