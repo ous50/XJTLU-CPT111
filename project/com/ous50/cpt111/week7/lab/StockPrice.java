@@ -5,46 +5,85 @@ public class StockPrice {
     private double open, high, low, close;
     private int volume;
 
+    public void setTicker(String ticker) {
+        this.ticker = ticker;
+    }
 
-    public StockPrice(String t , String d, double o, double h, double l, double c, int  v ){
-        this.ticker = t;
-        this.date = d;
-        this.open = o;
-        this.high = h;
-        this.low = l;
-        this.close = c;
-        this.volume = v;
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setOpen(double open) {
+        this.open = open;
+    }
+
+    public void setHigh(double high) {
+        this.high = high;
+    }
+
+    public void setLow(double low) {
+        this.low = low;
+    }
+
+    public void setClose(double close) {
+        this.close = close;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
 
     public String getTicker() {
-        return ticker;
-    }
-
-    public double getOpen() {
-        return open;
-    }
-
-    public double getClose() {
-        return close;
+        return this.ticker;
     }
 
     public String getDate() {
-        return date;
+        return this.date;
+    }
+
+    public double getOpen() {
+        return this.open;
     }
 
     public double getHigh() {
-        return high;
+        return this.high;
     }
 
     public double getLow() {
-        return low;
+        return this.low;
+    }
+
+    public double getClose() {
+        return this.close;
     }
 
     public int getVolume() {
-        return volume;
+        return this.volume;
     }
+
+
+
+    public StockPrice(String ticker, String date, double open, double high, double low, double close, int volume) {
+        this.ticker = ticker;
+        this.date = date;
+        this.open = open;
+        this.high = high;
+        this.low = low;
+        this.close = close;
+        this.volume = volume;
+    }
+
+
+
     public String toString() {
-        return String.format("Stock %s %s created",ticker, date);
+
+//        lib.println("Stockprice Ticker is " + obj[i].getTicker());
+//        lib.println("  -- Opening price is " + obj[i].getOpen());
+//        lib.println("  -- Closing price is " + obj[i].getClose());
+//
+        return String.format("Stockprice Ticker is %s\n",this.ticker) +
+                String.format("  -- Opening price is %.2f\n", this.open) +
+                String.format("  -- Closing price is %.2f", this.close);
     }
 
 
@@ -52,6 +91,9 @@ public class StockPrice {
     public double getSpread(){
         return this.open - this.low;
     }
+
+
+
 
 //    StockPrice obj[] = new StockPrice[3];//create an object array for objects StockPrice.
 

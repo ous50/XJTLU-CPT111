@@ -1,5 +1,7 @@
 package com.ous50.cpt111.week7.lab;
 
+import com.ous50.cpt111.lib;
+
 public class Student {
     private String name, id;
     private double chinese, math, english;
@@ -11,6 +13,8 @@ public class Student {
         this.chinese = chinese;
         this.math = math;
         this.english = english;
+
+        Student.studentAmount += 1;
     }
 
     public String getName() {
@@ -42,19 +46,24 @@ public class Student {
     }
 
     public double getAverageScore(){
-        return (getChinese() + getMath() + getEnglish())/3;
+        return this.getTotalScore()/3.0;
     }
 
-    @Override
+
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                ", chinese=" + chinese +
-                ", math=" + math +
-                ", english=" + english +
-                ", total score = " + getTotalScore() +
-                ", average score = " + getAverageScore() +
-                '}';
+
+
+
+        return String.format("Name: %s id: %s average score: %1.14f total score: %1.1f", this.name, this.id, this.getAverageScore(), this.getTotalScore());
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student(
+                "Teng",
+                "1101",
+                92.0,
+                93.0,
+                91.0);
+        lib.println(s1);
     }
 }

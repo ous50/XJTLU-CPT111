@@ -1,5 +1,5 @@
 package com.ous50.cpt111.week8.cw2;
-import com.ous50.lib;
+
 
 public class calculateXYZ{
 
@@ -12,7 +12,7 @@ public class calculateXYZ{
                 for (char c : substring.toCharArray())
                     if (c == 'x' || c == 'y' || c == 'z')  amount++;
             }
-            
+
         }
         return amount;
     }
